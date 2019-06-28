@@ -1,0 +1,744 @@
+body {
+  color: #4D4D4D;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: scroll;
+}
+
+section.login{
+  background: #dbd5d5;
+  padding: 8%;
+  height: 100%;
+}
+
+main.teacher {
+  float: right;
+  width: 82%;
+} 
+
+main.student {
+  position: relative;
+  margin: auto;
+  width: 82%;
+  background-color: rgba(255,198,41,0.1);
+} 
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+aside.teacher {
+  float: left;
+  width: 15%;
+  padding: 1%;
+  height: 100%;
+  position: fixed;
+  background: rgba(255,198,41,0.1);
+}
+
+aside ul {
+  border-top: 3px solid #818181;
+  border-bottom: 3px solid #818181;
+  padding: 5%;
+} 
+
+aside li {
+  margin: 10% 0 10% 0;
+  list-style: none;
+} 
+
+aside li a {
+  color: #4D4D4D;
+  text-transform: uppercase;
+} 
+
+aside li a:hover {
+  font-weight: bold;
+} 
+
+aside .icon {
+  width: 10%;
+} 
+
+aside .btn {
+  width: 100%;
+}
+
+aside .user-data {
+  text-align: center;
+}
+
+aside .user-data p {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1100px) {
+  main.teacher,
+  main.student {
+		float: none;
+		width: 98%;
+		padding: 1%;
+	}
+	aside.teacher {
+		float: none;
+		width: 98%;
+    padding: 1%;
+    position: static;
+  }
+
+}
+
+/******** HEADER *********/
+
+img.header,
+.homepage {
+  width: 100%;
+}
+
+form.upload {
+  padding: 50px;
+  margin: auto;
+  position: relative;
+}
+
+.homepage th {
+  background-color: black;
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+  padding: 10px;
+}
+/* img.upload {
+  width: 50px;
+} */
+
+header p {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 3px solid #000;
+  color: #000;
+}
+
+header {
+  background: rgb(220,220,220);
+}
+
+.avatar {
+  border: 1px solid #4D4D4D;
+  width: 70%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+/*************** LOGIN *******************/
+
+.fancy-login-form {
+  text-align: left;
+  width: 60%;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fancy-login-form img {
+  width: 100%;
+  margin: 10px;
+}
+
+.fancy-login-form form {
+  margin-top: 10%;
+  padding: 30px;
+}
+
+.fancy-login-form input {
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #cecece;
+}
+
+.fancy-login-form input,
+.fancy-login-form label {
+  width: 100%;
+  display: block;
+  margin-bottom: 50px;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.fancy-login-form .error {
+  color: red;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.fancy-login-form .buttons-group {
+  text-align: center;
+}
+
+.fancy-login-form .btn {
+  width: 100%;
+  margin: 10px;
+}
+
+/********** DASHBOARD *********/
+.diagrams img,
+.upload img {
+  width: 100px;
+  float: left;
+}
+
+.diagrams label,
+.upload label {
+  font-size: 25px;
+  position: relative;
+  top: 1.4em;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.diagrams table {
+  margin-top: 2%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.diagrams th {
+  text-align: left;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.diagrams td {
+  text-align: left;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.diagrams td p{
+  font-size: 20px;
+}
+
+.row-canvas {
+  height: 500px;
+}
+
+.diagrams td.canvas{
+  width: 60%;
+}
+
+/* .canvas {
+  padding: 50px;
+} */
+
+/******** PROFIL DETAILS ******/
+
+.profile-info,
+.change-password {
+  background: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+
+.profile-info .form-control,
+.change-password .form-control {
+  width: 350px;
+  height: 30px;
+}
+
+.change-password .btn {
+  margin: 2%;
+}
+
+/******** BUTTONS ******/
+
+.btn .icon {
+  width: 20px;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 13px;
+  background-color: white;
+  color: black;
+  padding: 5px 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.xs {
+  width: 22%;
+}
+
+.md {
+  width: 35%;
+}
+
+.lg {
+  width: 60%;
+}
+
+.bg {
+  width: 100%;
+}
+
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.info {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+.danger {
+  border-color: #f44336;
+  color: red
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+.fileContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.fileContainer [type=file] {
+  cursor: inherit;
+  display: block;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+  cursor: pointer;
+}
+
+/********** STUDENTS *************/
+
+.students table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.students th, 
+.students td {
+  text-align: left;
+  padding: 8px;
+}
+
+.students tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.students tr:nth-child(odd){
+  background-color: #fff;
+}
+
+.students th {
+  background-color: #95A5A6;
+  color: white;
+}
+
+/***************** CHART SETTINGS *************/
+
+.chart-widget .settings-chart .settings,
+.chart-widget .type .charts,
+.chart-widget .all-charts
+.profile-details .profile-info {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.chart-widget .images {
+  width: 100%;
+}
+
+.charts input[type="radio"][id^="type-"] {
+  display: none;
+}
+
+.charts label {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.charts label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+.charts label img {
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+.charts :checked + label:before {
+  content: "✓";
+  background-color: #00994C;
+  transform: scale(2);
+}
+
+.charts :checked + label img {
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.data {
+  border-collapse: collapse;
+  display: flex;
+}
+
+.profile-details .profile-info {
+  width: 100%;
+}
+
+.data td,
+.profile-details .profile-info td {
+  border: 1px solid black;
+}
+
+.data tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.data .btn {
+  margin-bottom: 15px;
+}
+
+.settings .btn .icon {
+  width: 13px;
+}
+
+.settings th,
+.charts th,
+.profile-details .profile-info th,
+.profile-details .profile-info td {
+  text-align: left;
+  padding: 8px;
+}
+
+.settings td {
+  padding: 8px;
+}
+
+.settings td .btn {
+  margin: 8px;
+}
+
+.charts td {
+  text-align: center;
+  padding: 8px;
+}
+
+.settings th,
+.charts th,
+.profile-details .profile-info th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.settings input,
+.profile-details .profile-info input {
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #cecece;
+  height: 50px;
+  font-size: 20px;
+}
+
+.settings input,
+.settings label,
+.profile-details .profile-info input,
+.profile-details .profile-info label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.settings input[type="checkbox"],
+.settings .checkbox {
+  display: inline;
+}
+
+.settings select,
+.settings input[type="color"] {
+  width: 160px;
+  height: 20px;
+}
+
+.data select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.data select#all-student {
+  height: 90px;
+  display: none;
+}
+
+.settings .chart-type {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 7%;
+}
+
+.settings .chart-type:hover {
+  transform: scale(1.2);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.chart-container {
+  position: relative; 
+  margin: auto;
+  padding: 50px;
+  width: 50%;
+}
+
+/******* MODAL *******/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 70px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+  from {
+    top:-300px; 
+    opacity:0;
+  } 
+  to {
+    top:0; 
+    opacity:1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top:-300px; 
+    opacity:0;
+  }
+  to {
+    top:0; 
+    opacity:1;
+  }
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(220,220,220);
+  color: black;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: rgb(220,220,220);
+  height: 50px;
+}
+
+.form-buttons {
+  text-align: right;
+  margin: 15px;
+}
+
+/***** HOMEPAGE ******/
+
+.homepage td {
+  text-align: left;
+}
+
+.homepage tr.buttons td {
+  padding: 30px;
+  text-align: center;
+}
+
+.homepage tr.allData > td{
+  padding: 30px;
+  text-align: left;
+}
+
+.homepage .title {
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.homepage .students {
+  width: 100%;
+}
+
+.homepage td{
+  padding: 10px;
+}
+
+/********* BACK TO TOP ***********/
+
+#logout {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+/***** Upload Excel ************/
+.upload-excel {
+  margin: 25px;
+  font-size: 25px;
+}
+
+.upload-excel img{
+  margin-right: 15px;
+  width: 30px;
+  float: left;
+}
+
+
+/************ ERRORS *************/
+.error {
+  text-align: center;
+}
+
+.error h1{
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type .5s alternate infinite;
+}
+
+@keyframes type{
+  from{box-shadow: inset -3px 0px 0px #888;}
+  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+
+.errorDesc {
+  color: red;
+}
+
+
+  
+
+
+
+
+
